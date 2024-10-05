@@ -12,6 +12,7 @@ STATUSES = {NEW: "Новая", IN_PROGRESS: "В процессе", COMPLETED: "�
 
 FILENAME = "tasks.txt"
 
+
 def load_tasks() -> dict:
     """Загрузка задач из файла."""
     tasks = {}
@@ -163,7 +164,6 @@ def view_tasks(tasks, sort_by=None, search_term=None):
 
     for task_id, task_info in sorted_tasks:
         output_tasks(task_id, task_info)
-
 
 
 def main_menu() -> None:
